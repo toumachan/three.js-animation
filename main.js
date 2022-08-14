@@ -75,30 +75,30 @@ container.rotation.z = -0.2;
 scene.add(container);
 
 // テキスト
-// let textMesh;
-// const textSize = 6;
-// const fontLoader = new FontLoader();
-// fontLoader.load("/node_module/three/examples/fonts/droid/droid_sans_mono_regular.typeface.json", function(font) {
-//   createTextGeometry("U", font, 330);
-//   createTextGeometry("N", font, 345);
-//   createTextGeometry("I", font, 0);
-//   createTextGeometry("V", font, 15);
-//   createTextGeometry("E", font, 30);
-//   createTextGeometry("R", font, 45);
-//   createTextGeometry("S", font, 60);
-//   createTextGeometry("A", font, 75);
-//   createTextGeometry("L", font, 90);
+let textMesh;
+const textSize = 6;
+const fontLoader = new FontLoader();
+fontLoader.load("/node_module/three/examples/fonts/droid/droid_sans_mono_regular.typeface.json", function(font) {
+  createTextGeometry("U", font, 330);
+  createTextGeometry("N", font, 345);
+  createTextGeometry("I", font, 0);
+  createTextGeometry("V", font, 15);
+  createTextGeometry("E", font, 30);
+  createTextGeometry("R", font, 45);
+  createTextGeometry("S", font, 60);
+  createTextGeometry("A", font, 75);
+  createTextGeometry("L", font, 90);
 
-//   createTextGeometry("U", font, 150);
-//   createTextGeometry("N", font, 165);
-//   createTextGeometry("I", font, 180);
-//   createTextGeometry("V", font, 195);
-//   createTextGeometry("E", font, 210);
-//   createTextGeometry("R", font, 225);
-//   createTextGeometry("S", font, 240);
-//   createTextGeometry("A", font, 255);
-//   createTextGeometry("L", font, 270);
-// });
+  createTextGeometry("U", font, 150);
+  createTextGeometry("N", font, 165);
+  createTextGeometry("I", font, 180);
+  createTextGeometry("V", font, 195);
+  createTextGeometry("E", font, 210);
+  createTextGeometry("R", font, 225);
+  createTextGeometry("S", font, 240);
+  createTextGeometry("A", font, 255);
+  createTextGeometry("L", font, 270);
+});
 
 //テクスチャ
 const textureLoader = new THREE.TextureLoader();
@@ -179,31 +179,31 @@ trackballControls.maxDistance = 1000;
 trackballControls.noZoom = true;
 
 /***** 3Dテキスト作成関数 *****/
-// function createTextGeometry(text, font, deg) {
-//   const textGeometry = new TextGeometry(text, {
-//     font: font,
-//     size: textSize,
-//     height: 1.5,
-//     curveSegment: 1
-//   });
-//   textGeometry.center();
+function createTextGeometry(text, font, deg) {
+  const textGeometry = new TextGeometry(text, {
+    font: font,
+    size: textSize,
+    height: 1.5,
+    curveSegment: 1
+  });
+  textGeometry.center();
 
-//   const material = new THREE.MeshPhongMaterial({ color: 0xffffff });
+  const material = new THREE.MeshPhongMaterial({ color: 0xffffff });
 
-//   const r = 22;
-//   const phi = 90 * (Math.PI / 180);
-//   const theta = deg * (Math.PI / 180);
-//   const sphericalPos = new THREE.Spherical(r, phi, theta);
+  const r = 22;
+  const phi = 90 * (Math.PI / 180);
+  const theta = deg * (Math.PI / 180);
+  const sphericalPos = new THREE.Spherical(r, phi, theta);
 
-//   textMesh = new THREE.Mesh(textGeometry, material);
-//   textMesh.position.setFromSpherical(sphericalPos);
+  textMesh = new THREE.Mesh(textGeometry, material);
+  textMesh.position.setFromSpherical(sphericalPos);
 
-//   const vector = new THREE.Vector3();
-//   vector.copy(textMesh.position).multiplyScalar(2);
+  const vector = new THREE.Vector3();
+  vector.copy(textMesh.position).multiplyScalar(2);
 
-//   textMesh.lookAt(vector);
-//   container.add(textMesh);
-// }
+  textMesh.lookAt(vector);
+  container.add(textMesh);
+}
 
 
 /***** 描画関数 *****/
