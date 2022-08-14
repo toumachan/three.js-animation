@@ -1,9 +1,9 @@
 import './style.css'
-import * as THREE from './node_modules/three';
-import { TrackballControls } from './node_modules/three/examples/jsm/controls/TrackballControls.js';
-import * as dat from "./node_modules/lil-gui";
-import { FontLoader } from "./node_modules/three/examples/jsm/loaders/FontLoader.js";
-import { TextGeometry } from "./node_modules/three/examples/jsm/geometries/TextGeometry.js";
+import * as THREE from 'three';
+import { TrackballControls } from 'three/examples/jsm/controls/TrackballControls.js';
+import * as dat from "lil-gui";
+import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
+import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
 
 //UIデバッグ
 const gui = new dat.GUI();
@@ -75,7 +75,7 @@ scene.add(container);
 let textMesh;
 const textSize = 6;
 const fontLoader = new FontLoader();
-fontLoader.load("./node_modules/three/examples/fonts/droid/droid_sans_mono_regular.typeface.json", function(font) {
+fontLoader.load("three/examples/fonts/droid/droid_sans_mono_regular.typeface.json", function(font) {
   createTextGeometry("U", font, 330);
   createTextGeometry("N", font, 345);
   createTextGeometry("I", font, 0);
