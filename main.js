@@ -79,27 +79,27 @@ scene.add(container);
 let textMesh;
 const textSize = 6;
 const fontLoader = new FontLoader();
-fontLoader.load("/node_module/three/examples/fonts/droid/droid_sans_mono_regular.typeface.json", function(font) {
-  createTextGeometry("U", font, 330);
-  createTextGeometry("N", font, 345);
-  createTextGeometry("I", font, 0);
-  createTextGeometry("V", font, 15);
-  createTextGeometry("E", font, 30);
-  createTextGeometry("R", font, 45);
-  createTextGeometry("S", font, 60);
-  createTextGeometry("A", font, 75);
-  createTextGeometry("L", font, 90);
+// fontLoader.load("/node_module/three/examples/fonts/droid/droid_sans_mono_regular.typeface.json", function(font) {
+//   createTextGeometry("U", font, 330);
+//   createTextGeometry("N", font, 345);
+//   createTextGeometry("I", font, 0);
+//   createTextGeometry("V", font, 15);
+//   createTextGeometry("E", font, 30);
+//   createTextGeometry("R", font, 45);
+//   createTextGeometry("S", font, 60);
+//   createTextGeometry("A", font, 75);
+//   createTextGeometry("L", font, 90);
 
-  createTextGeometry("U", font, 150);
-  createTextGeometry("N", font, 165);
-  createTextGeometry("I", font, 180);
-  createTextGeometry("V", font, 195);
-  createTextGeometry("E", font, 210);
-  createTextGeometry("R", font, 225);
-  createTextGeometry("S", font, 240);
-  createTextGeometry("A", font, 255);
-  createTextGeometry("L", font, 270);
-});
+//   createTextGeometry("U", font, 150);
+//   createTextGeometry("N", font, 165);
+//   createTextGeometry("I", font, 180);
+//   createTextGeometry("V", font, 195);
+//   createTextGeometry("E", font, 210);
+//   createTextGeometry("R", font, 225);
+//   createTextGeometry("S", font, 240);
+//   createTextGeometry("A", font, 255);
+//   createTextGeometry("L", font, 270);
+// });
 
 //テクスチャ
 const textureLoader = new THREE.TextureLoader();
