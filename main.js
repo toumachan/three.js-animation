@@ -76,9 +76,9 @@ container.rotation.z = -0.2;
 scene.add(container);
 
 // テキスト
-let textMesh;
-const textSize = 6;
-const fontLoader = new FontLoader();
+// let textMesh;
+// const textSize = 6;
+// const fontLoader = new FontLoader();
 // fontLoader.load("/node_module/three/examples/fonts/droid/droid_sans_mono_regular.typeface.json", function(font) {
 //   createTextGeometry("U", font, 330);
 //   createTextGeometry("N", font, 345);
