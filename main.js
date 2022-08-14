@@ -79,7 +79,7 @@ scene.add(container);
 let textMesh;
 const textSize = 6;
 const fontLoader = new FontLoader();
-fontLoader.load(droidFont, function(font) {
+fontLoader.load("/node_module/three/examples/fonts/droid/droid_sans_mono_regular.typeface.json", function(font) {
   createTextGeometry("U", font, 330);
   createTextGeometry("N", font, 345);
   createTextGeometry("I", font, 0);
