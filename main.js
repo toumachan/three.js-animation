@@ -1,9 +1,9 @@
 import './style.css'
-import * as THREE from '/three';
-import { TrackballControls } from '/three/examples/jsm/controls/TrackballControls.js';
-import * as dat from "/lil-gui";
-import { FontLoader } from "/three/examples/jsm/loaders/FontLoader.js";
-import { TextGeometry } from "/three/examples/jsm/geometries/TextGeometry.js";
+import * as THREE from './node_modules/three';
+import { TrackballControls } from './node_modules/three/examples/jsm/controls/TrackballControls.js';
+import * as dat from "./node_modules/lil-gui";
+import { FontLoader } from "./node_modules/three/examples/jsm/loaders/FontLoader.js";
+import { TextGeometry } from "./node_modules/three/examples/jsm/geometries/TextGeometry.js";
 
 //UIデバッグ
 const gui = new dat.GUI();
