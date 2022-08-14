@@ -7,7 +7,7 @@ import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
 import texture01 from "/texture/earth.jpg";
 import texture02 from "/texture/star02.png";
 import texture03 from "/texture/Burst01.png";
-import font from "/node_module/three/examples/fonts/droid/droid_sans_mono_regular.typeface.json";
+import droidFont from "/node_module/three/examples/fonts/droid/droid_sans_mono_regular.typeface.json";
 
 //UIデバッグ
 const gui = new dat.GUI();
@@ -79,7 +79,7 @@ scene.add(container);
 let textMesh;
 const textSize = 6;
 const fontLoader = new FontLoader();
-fontLoader.load(font, function(font) {
+fontLoader.load(droidFont, function(font) {
   createTextGeometry("U", font, 330);
   createTextGeometry("N", font, 345);
   createTextGeometry("I", font, 0);
