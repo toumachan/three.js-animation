@@ -180,31 +180,31 @@ trackballControls.maxDistance = 1000;
 trackballControls.noZoom = true;
 
 /***** 3Dテキスト作成関数 *****/
-function createTextGeometry(text, font, deg) {
-  const textGeometry = new TextGeometry(text, {
-    font: font,
-    size: textSize,
-    height: 1.5,
-    curveSegment: 1
-  });
-  textGeometry.center();
+// function createTextGeometry(text, font, deg) {
+//   const textGeometry = new TextGeometry(text, {
+//     font: font,
+//     size: textSize,
+//     height: 1.5,
+//     curveSegment: 1
+//   });
+//   textGeometry.center();
 
-  const material = new THREE.MeshPhongMaterial({ color: 0xffffff });
+//   const material = new THREE.MeshPhongMaterial({ color: 0xffffff });
 
-  const r = 22;
-  const phi = 90 * (Math.PI / 180);
-  const theta = deg * (Math.PI / 180);
-  const sphericalPos = new THREE.Spherical(r, phi, theta);
+//   const r = 22;
+//   const phi = 90 * (Math.PI / 180);
+//   const theta = deg * (Math.PI / 180);
+//   const sphericalPos = new THREE.Spherical(r, phi, theta);
 
-  textMesh = new THREE.Mesh(textGeometry, material);
-  textMesh.position.setFromSpherical(sphericalPos);
+//   textMesh = new THREE.Mesh(textGeometry, material);
+//   textMesh.position.setFromSpherical(sphericalPos);
 
-  const vector = new THREE.Vector3();
-  vector.copy(textMesh.position).multiplyScalar(2);
+//   const vector = new THREE.Vector3();
+//   vector.copy(textMesh.position).multiplyScalar(2);
 
-  textMesh.lookAt(vector);
-  container.add(textMesh);
-}
+//   textMesh.lookAt(vector);
+//   container.add(textMesh);
+// }
 
 
 /***** 描画関数 *****/
