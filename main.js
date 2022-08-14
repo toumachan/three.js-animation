@@ -4,9 +4,9 @@ import { TrackballControls } from 'three/examples/jsm/controls/TrackballControls
 import * as dat from "lil-gui";
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
 import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
-import texture01 from "./texture/earth.jpg";
-import texture02 from "./texture/star02.png";
-import texture03 from "./texture/Burst01.png";
+import texture01 from "/texture/earth.jpg";
+import texture02 from "/texture/star02.png";
+import texture03 from "/texture/Burst01.png";
 
 //UIデバッグ
 const gui = new dat.GUI();
