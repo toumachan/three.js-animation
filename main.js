@@ -99,9 +99,9 @@ fontLoader.load("node_modules/three/examples/fonts/droid/droid_sans_mono_regular
 
 //テクスチャ
 const textureLoader = new THREE.TextureLoader();
-const earthTexture = textureLoader.load("texture/earth.jpg");
-const particlesTexture = textureLoader.load("texture/star02.png");
-const starTexture = textureLoader.load("texture/Burst01.png");
+const earthTexture = textureLoader.load("./texture/earth.jpg");
+const particlesTexture = textureLoader.load("./texture/star02.png");
+const starTexture = textureLoader.load("./texture/Burst01.png");
 
 // 球体
 const sphereGeometry = new THREE.SphereGeometry(20, 20, 20);
