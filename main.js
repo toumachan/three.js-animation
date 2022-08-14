@@ -7,7 +7,6 @@ import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
 import texture01 from "/texture/earth.jpg";
 import texture02 from "/texture/star02.png";
 import texture03 from "/texture/Burst01.png";
-import droidFont from "/node_module/three/examples/fonts/droid/droid_sans_mono_regular.typeface.json";
 
 //UIデバッグ
 const gui = new dat.GUI();
