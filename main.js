@@ -78,7 +78,7 @@ scene.add(container);
 let textMesh;
 const textSize = 6;
 const fontLoader = new FontLoader();
-fontLoader.load("../font/droid_sans_mono_regular.typeface.json", function(font) {
+fontLoader.load("/font/droid_sans_mono_regular.typeface.json", function(font) {
   createTextGeometry("U", font, 330);
   createTextGeometry("N", font, 345);
   createTextGeometry("I", font, 0);
@@ -102,7 +102,7 @@ fontLoader.load("../font/droid_sans_mono_regular.typeface.json", function(font) 
 
 //テクスチャ
 const textureLoader = new THREE.TextureLoader();
-const earthTexture = textureLoader.load(texture01);
+const earthTexture = textureLoader.load("/texture/earth.jpg");
 const particlesTexture = textureLoader.load(texture02);
 const starTexture = textureLoader.load(texture03);
 
