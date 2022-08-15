@@ -130,7 +130,7 @@ particlesGeometry.setAttribute(
 )
 
 const pointMaterial = new THREE.PointsMaterial({
-  size: 1.0,
+  size: 0.65,
   sizeAttenuation: true,
   alphaMap: particlesTexture,
   transparent: true,
