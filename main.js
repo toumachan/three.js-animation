@@ -102,7 +102,7 @@ fontLoader.load("/font/droid_sans_mono_regular.typeface.json", function(font) {
 
 //テクスチャ
 const textureLoader = new THREE.TextureLoader();
-const earthTexture = textureLoader.load("/texture/earth.jpg");
+const earthTexture = textureLoader.load("../texture/earth.jpg");
 const particlesTexture = textureLoader.load(texture02);
 const starTexture = textureLoader.load(texture03);
 
